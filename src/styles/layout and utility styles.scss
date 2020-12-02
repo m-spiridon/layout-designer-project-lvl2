@@ -1,0 +1,17 @@
+$icons: (
+  "whale": (32, 64)
+);
+
+@mixin icon($icon-name, $icon-size) {
+  .icon-#{$icon-size}-#{$icon-name} {
+    width: $icon-size;
+    height: $icon-size;
+    background: url("../icon/svg/#{$icon-size}/#{$icon-name}.svg");
+  }
+}
+
+@each $icon, $sizes in $icons {
+  @each $size in $sizes {
+    @include icon($icon, $size);
+  }
+}

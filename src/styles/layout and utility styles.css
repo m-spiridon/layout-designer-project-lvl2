@@ -1,0 +1,12 @@
+.icon-32-whale {
+  width: 32;
+  height: 32;
+  background: url("../icon/svg/32/whale.svg");
+}
+
+.icon-64-whale {
+  width: 64;
+  height: 64;
+  background: url("../icon/svg/64/whale.svg");
+}
+/*# sourceMappingURL=layout and utility styles.css.map */
