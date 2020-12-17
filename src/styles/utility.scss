@@ -1,0 +1,56 @@
+@import "colors";
+
+.block-center {    
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-grey {
+    color: $dark-grey;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.mb-responsive {
+    margin-bottom: 16px;
+}
+
+.order {
+    order: 1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+    .mb-responsive {
+        margin-bottom: 30px;
+    }
+}

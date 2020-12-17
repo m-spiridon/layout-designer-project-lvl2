@@ -1,0 +1,116 @@
+.subscription-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.subscription-free-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 374px;
+  padding: 21px 24px 66px;
+  margin: 0 auto 40px;
+  background-image: url(../images/subscription-free.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.subscription-standart-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 374px;
+  padding: 21px 24px 66px;
+  margin: 0 auto 40px;
+  background-image: url(../images/subscription-standart.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.subscription-premium-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 374px;
+  padding: 21px 24px 66px;
+  margin: 0 auto 40px;
+  background-image: url(../images/subscription-premium.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.subscription-card-title {
+  margin-bottom: 180px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscription-price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.subscription-price {
+  font-size: 64px;
+}
+
+.subscription-currency {
+  margin-top: 16px;
+  margin-left: 16px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.subscription-btn {
+  display: block;
+  width: 100%;
+  padding: 21px 0;
+  margin-bottom: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 769px) {
+  .subscription-card-title {
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=subscription-cards.css.map */

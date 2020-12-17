@@ -1,0 +1,68 @@
+@import "colors";
+
+.subscription-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+$subscriptions: (subscription-free, subscription-standart, subscription-premium);
+
+@mixin subscription-card ($name) {
+    .#{$name}-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 374px;
+        padding: 21px 24px 66px;
+        margin: 0 auto 40px;
+        background-image: url(../images/#{$name}.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+}
+@each $subscription in $subscriptions {
+    @include subscription-card($subscription);
+}
+
+.subscription-card-title {
+    margin-bottom: 180px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subscription-price-wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.subscription-price {
+    font-size: 64px;
+}
+
+.subscription-currency {
+    margin-top: 16px;
+    margin-left: 16px; 
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.subscription-btn {
+    display: block;
+    width: 100%;
+    padding: 21px 0;
+    margin-bottom: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $white;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 769px) {
+    .subscription-card-title {
+        font-size: 24px;
+    }   
+}

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAKE,AAAA,cAAc,CAAoB;EAChC,KAAK,EALG,EAAE;EAMV,MAAM,EANE,EAAE;EAOV,UAAU,EAAE,+BAAkD;CAC/D;;AAJD,AAAA,cAAc,CAAoB;EAChC,KAAK,EALO,EAAE;EAMd,MAAM,EANM,EAAE;EAOd,UAAU,EAAE,+BAAkD;CAC/D",
-    "sources": [
-        "layout and utility styles.scss"
-    ],
-    "names": [],
-    "file": "layout and utility styles.css"
-}
