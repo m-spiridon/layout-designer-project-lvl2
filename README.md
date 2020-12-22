@@ -1,4 +1,4 @@
-http://m-spiridon-music-box.surge.sh/main
+http://m-spiridon-music-box.surge.sh
 
 http://m-spiridon-music-box.surge.sh/artist
 
