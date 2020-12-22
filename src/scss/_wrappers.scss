@@ -1,107 +1,108 @@
 .content-wrapper {
-    max-width: 1200px;
-    padding: 0 20px 0;
-    margin: 0 auto;
-    overflow-x: hidden;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow-x: hidden;
+  padding: 0 20px;
 
-    @media (min-width: 1200px) {
-        padding: 0;
-    }
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .header-wrapper {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 
-    @media screen and (min-width: 769px) {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 150px;
-    }
+  @media screen and (min-width: 769px) {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+  }
 }
 
 .logo-field {
-    display: flex;
-    align-items: center;
-    margin: 0 0 16px 0;
+  align-items: center;
+  display: flex;
+  margin: 0 0 16px;
 
-    @media screen and (min-width: 769px) {
-        margin: 0 88px 0 0;
-    }
+  @media screen and (min-width: 769px) {
+    margin: 0 88px 0 0;
+  }
 }
 
 .section-wrapper {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .header-form {
-    max-width: 570px;
-    padding-bottom: 200px;
+  max-width: 570px;
+  padding-bottom: 200px;
 }
 
 .header-inputs-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
 }
 
 .row {
-    display: block;
-    margin: 0 -25px 65px;
-    &:last-child {
-        margin-bottom: 0;
-    }
+  display: block;
+  margin: 0 -25px 65px;
 
-    @media screen and (min-width: 769px) {
-        display: flex;
-        justify-content: space-between;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .column {    
-    flex: 1 1 0;
-    padding: 0 25px;
+  flex: 1 1 0;
+  padding: 0 25px;
 }
 
 .tracks-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 25px;
 
-    @media screen and (min-width: 550px) {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 50px;
-    }
+  @media screen and (min-width: 550px) {
+    column-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .popular-track {
-    display: flex;
-    align-items: center;
+  align-items: center;
+  display: flex;
 }
 
 .track-name-field {
-    display: inline-block;
-    padding-left: 15px;
+  display: inline-block;
+  padding-left: 15px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 50px;
-    row-gap: 25px;
+  column-gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 25px;
 
-    @media screen and (min-width: 550px) {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  @media screen and (min-width: 550px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    @media screen and (min-width: 769px) {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  @media screen and (min-width: 769px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .footer-top {
-    padding-bottom: 75px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid $dark-grey;
+  border-bottom: 1px solid $dark-grey;
+  margin-bottom: 40px;
+  padding-bottom: 75px;
 }

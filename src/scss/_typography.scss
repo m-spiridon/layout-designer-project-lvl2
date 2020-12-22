@@ -1,74 +1,74 @@
 .main-title {
-    font-weight: bold;
-    font-size: 30px;
-    text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
     
-    @media screen and (min-width: 769px) {
-        font-size: 60px;
-    }
+  @media screen and (min-width: 769px) {
+    font-size: 60px;
+  }
 }
 
 .section-title {
-    margin-bottom: 48px;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 48px;
+  text-transform: uppercase;
     
-    @media screen and (min-width: 769px) {
-        font-size: 38px;
-    }
+  @media screen and (min-width: 769px) {
+    font-size: 38px;
+  }
 }
 
 .news-title {
-    font-size: 16px;
-    text-transform: capitalize;
+  font-size: 16px;
+  text-transform: capitalize;
     
-    @media screen and (min-width: 769px) {
-        font-size: 30px;
-    }
+  @media screen and (min-width: 769px) {
+    font-size: 30px;
+  }
 }
 
 .news-author {
-    display: flex;
-    align-items: center;
-    margin-bottom: 48px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 48px;
 }
 
 .author-name {
-    margin-right: 16px;
-    font-size: 12.8px;
-    text-transform: uppercase;
-    color: $orange;
+  color: $orange;
+  font-size: 12.8px;
+  margin-right: 16px;
+  text-transform: uppercase;
 }
 
 .track-name {
-    font-weight: bold;
-    font-size: 12.8px;
-    text-transform: uppercase;
+  font-size: 12.8px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .track-artist {
-    font-size: 12.8px;
-    text-transform: capitalize;
-    color: $dark-grey;
+  color: $dark-grey;
+  font-size: 12.8px;
+  text-transform: capitalize;
 }
 
 .track-time {
-    font-size: 12.8px;
-    margin-left: auto;
-    color: $dark-grey;
+  color: $dark-grey;
+  font-size: 12.8px;
+  margin-left: auto;
 }
 
 .album-name,
 .artist-name {
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 .footer-title {
-    margin-bottom: 16px;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }

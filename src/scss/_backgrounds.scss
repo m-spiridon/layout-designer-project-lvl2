@@ -1,21 +1,21 @@
 $bg-imgs: (main-header, morten-harket-header);
 
 @mixin bg-img ($name) {
-    .#{$name}-bg {
-        padding-top: 25px;
-        margin-bottom: 100px;
-        background-image: url(../images/#{$name}.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+  .#{$name}-bg {
+    background-image: url(../images/#{$name}.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    padding-top: 25px;
+  }
 }
 @each $bg-img-name in $bg-imgs {
-    @include bg-img($bg-img-name);
+  @include bg-img($bg-img-name);
 }
 
-.footer-bg {
-    padding-top: 60px;
-    padding-bottom: 48px;    
-    background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
+.footer-bg {    
+  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
+  padding-bottom: 48px;
+  padding-top: 60px;
 }

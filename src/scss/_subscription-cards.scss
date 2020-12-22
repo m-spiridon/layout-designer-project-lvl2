@@ -1,68 +1,68 @@
-@import "colors";
+@import 'colors';
 
 .subscription-cards-container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 $subscriptions: (subscription-free, subscription-standart, subscription-premium);
 
 @mixin subscription-card ($name) {
-    .#{$name}-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 374px;
-        padding: 21px 24px 66px;
-        margin: 0 auto 40px;
-        background-image: url(../images/#{$name}.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 20px;
-    }
+  .#{$name}-card {
+    align-items: center;
+    background-image: url(../images/#{$name}.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 40px;
+    max-width: 374px;
+    padding: 21px 24px 66px;
+  }
 }
 @each $subscription in $subscriptions {
-    @include subscription-card($subscription);
+  @include subscription-card($subscription);
 }
 
 .subscription-card-title {
-    margin-bottom: 180px;
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 180px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .subscription-price-wrapper {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 24px;
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 24px;
 }
 
 .subscription-price {
-    font-size: 64px;
+  font-size: 64px;
 }
 
-.subscription-currency {
-    margin-top: 16px;
-    margin-left: 16px; 
-    font-size: 32px;
-    text-transform: uppercase;
+.subscription-currency { 
+  font-size: 32px;
+  margin-left: 16px;
+  margin-top: 16px;
+  text-transform: uppercase;
 }
 
 .subscription-btn {
-    display: block;
-    width: 100%;
-    padding: 21px 0;
-    margin-bottom: 64px;
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid $white;
-    border-radius: 5px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 64px;
+  padding: 21px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 @media screen and (min-width: 769px) {
-    .subscription-card-title {
-        font-size: 24px;
-    }   
+  .subscription-card-title {
+    font-size: 24px;
+  }   
 }

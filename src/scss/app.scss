@@ -1,68 +1,70 @@
-@import "colors", 
-"wrappers", 
-"backgrounds",
-"utility",
-"typography",
-"menu-components",
-"form-components",
-"buttons",
-"subscription-cards",
-"other-components";
+@import 'colors', 
+  'wrappers', 
+'backgrounds',
+'utility',
+'typography',
+'menu-components',
+'form-components',
+'buttons',
+'subscription-cards',
+'other-components';
 
-*, 
-*::before, 
+*,
+ 
+*::before,
+ 
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    background-color: $black;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+  background-color: $black;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    color: $white;
+  color: $white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    margin: 0;
-    font-weight: inherit;
+  font-weight: inherit;
+  margin: 0;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
-img {    
-  max-width: 100%;
+img {
   height: auto;
+  max-width: 100%;
 }
 
 svg {
-    fill: $white;
+  fill: $white;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }

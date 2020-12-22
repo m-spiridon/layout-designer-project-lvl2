@@ -1,54 +1,54 @@
 .send-form-btn {
-    width: 100%;
-    padding: 21px 0;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13.3px;
-    line-height: 1.13;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    color: inherit;
-    background-color: $green;
+  background-color: $green;
+  border: none;
+  border-radius: 5px;
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13.3px;
+  line-height: 1.13;
+  padding: 21px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .shuffle-btn {
-    display: inline-flex;
-    align-items: center;
-    width: 200px;
-    padding: 21px 31px;
-    margin: 0 24px 24px 0;
-    vertical-align: middle;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12.8px;
-    text-align: left;
-    text-transform: uppercase;
-    color: inherit;
-    border: none;
-    border-radius: 5px;
-    background-color: $purple;
+  align-items: center;
+  background-color: $purple;
+  border: none;
+  border-radius: 5px;
+  color: inherit;
+  display: inline-flex;
+  font-family: Roboto;
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 24px 24px 0;
+  padding: 21px 31px;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 200px;
 }
 
 .add-to-fav-btn {
-    @extend .shuffle-btn;
-    background-color: $red;
+  @extend .shuffle-btn;
+  background-color: $red;
 }
 
 .mobile-app-btn {
-    display: inline-block;
-    padding: 17px 40px;
-    font-size: 12.8px;
-    background-color: $red;
-    border-radius: 32px;
+  background-color: $red;
+  border-radius: 32px;
+  display: inline-block;
+  font-size: 12.8px;
+  padding: 17px 40px;
 }
 
 .news-btn {
-    display: inline-block;
-    padding: 17px 30px;
-    font-size: 12.8px;
-    text-transform: uppercase;
-    border: 1px solid $white;
-    border-radius: 5px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 12.8px;
+  padding: 17px 30px;
+  text-transform: uppercase;
 }

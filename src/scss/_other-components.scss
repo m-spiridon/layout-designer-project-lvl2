@@ -1,18 +1,18 @@
 .icons {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .news-img {
-    width: 100%;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  width: 100%;
     
-    @media screen and (min-width: 769px) {
-        margin-bottom: 0;
-    }
+  @media screen and (min-width: 769px) {
+    margin-bottom: 0;
+  }
 }
 
 .album-img,
-.artist-img {    
-    width: 100%;
-    margin-bottom: 18px;
+.artist-img {
+  margin-bottom: 18px;
+  width: 100%;
 }
