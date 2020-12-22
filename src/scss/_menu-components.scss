@@ -1,0 +1,40 @@
+.logo-name {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 1.18;
+    text-transform: uppercase;
+}
+
+.header-menu {
+    display: block;
+    margin: 0 0 16px 0;
+    
+    @media screen and (min-width: 769px) {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
+}
+
+.header-menu-item {
+    @extend .logo-name;
+    padding-right: 24px;
+    color: $dark-grey;        
+    &:hover {
+        color: $white;   
+    }
+}
+
+.footer-menu {
+    display: block;
+
+    @media screen and (min-width: 769px) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.footer-menu-item {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}

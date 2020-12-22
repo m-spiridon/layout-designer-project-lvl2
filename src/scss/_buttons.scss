@@ -1,0 +1,54 @@
+.send-form-btn {
+    width: 100%;
+    padding: 21px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.3px;
+    line-height: 1.13;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    background-color: $green;
+}
+
+.shuffle-btn {
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+    padding: 21px 31px;
+    margin: 0 24px 24px 0;
+    vertical-align: middle;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12.8px;
+    text-align: left;
+    text-transform: uppercase;
+    color: inherit;
+    border: none;
+    border-radius: 5px;
+    background-color: $purple;
+}
+
+.add-to-fav-btn {
+    @extend .shuffle-btn;
+    background-color: $red;
+}
+
+.mobile-app-btn {
+    display: inline-block;
+    padding: 17px 40px;
+    font-size: 12.8px;
+    background-color: $red;
+    border-radius: 32px;
+}
+
+.news-btn {
+    display: inline-block;
+    padding: 17px 30px;
+    font-size: 12.8px;
+    text-transform: uppercase;
+    border: 1px solid $white;
+    border-radius: 5px;
+}

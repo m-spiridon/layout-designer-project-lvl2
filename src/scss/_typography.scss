@@ -1,0 +1,74 @@
+.main-title {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+    @media screen and (min-width: 769px) {
+        font-size: 60px;
+    }
+}
+
+.section-title {
+    margin-bottom: 48px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+    @media screen and (min-width: 769px) {
+        font-size: 38px;
+    }
+}
+
+.news-title {
+    font-size: 16px;
+    text-transform: capitalize;
+    
+    @media screen and (min-width: 769px) {
+        font-size: 30px;
+    }
+}
+
+.news-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.author-name {
+    margin-right: 16px;
+    font-size: 12.8px;
+    text-transform: uppercase;
+    color: $orange;
+}
+
+.track-name {
+    font-weight: bold;
+    font-size: 12.8px;
+    text-transform: uppercase;
+}
+
+.track-artist {
+    font-size: 12.8px;
+    text-transform: capitalize;
+    color: $dark-grey;
+}
+
+.track-time {
+    font-size: 12.8px;
+    margin-left: auto;
+    color: $dark-grey;
+}
+
+.album-name,
+.artist-name {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.footer-title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
