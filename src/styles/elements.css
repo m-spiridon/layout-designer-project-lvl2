@@ -14,6 +14,17 @@
   margin: 0 0 16px 0;
 }
 
+@media screen and (min-width: 769px) {
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+  }
+}
+
 .header-menu-item {
   padding-right: 24px;
   color: #CACACA;
@@ -25,6 +36,15 @@
 
 .search-form {
   display: block;
+}
+
+@media screen and (min-width: 769px) {
+  .search-form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 248px;
+            flex: 0 1 248px;
+    margin: 0 0 0 auto;
+  }
 }
 
 .search-input {
@@ -48,11 +68,23 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 769px) {
+  .main-title {
+    font-size: 60px;
+  }
+}
+
 .section-title {
   margin-bottom: 48px;
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 769px) {
+  .section-title {
+    font-size: 38px;
+  }
 }
 
 .header-label {
@@ -143,9 +175,21 @@
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 769px) {
+  .news-img {
+    margin-bottom: 0;
+  }
+}
+
 .news-title {
   font-size: 16px;
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 769px) {
+  .news-title {
+    font-size: 30px;
+  }
 }
 
 .news-author {
@@ -224,38 +268,7 @@
   display: block;
 }
 
-.footer-menu-item {
-  margin-right: 16px;
-  margin-bottom: 16px;
-}
-
 @media screen and (min-width: 769px) {
-  .search-form {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 248px;
-            flex: 0 1 248px;
-    margin: 0 0 0 auto;
-  }
-  .header-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    margin: 0;
-  }
-  .main-title {
-    font-size: 60px;
-  }
-  .section-title {
-    font-size: 38px;
-  }
-  .news-title {
-    font-size: 30px;
-  }
-  .news-img {
-    margin-bottom: 0;
-  }
   .footer-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,5 +276,10 @@
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+}
+
+.footer-menu-item {
+  margin-right: 16px;
+  margin-bottom: 16px;
 }
 /*# sourceMappingURL=elements.css.map */

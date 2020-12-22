@@ -38,6 +38,10 @@
 
 .mb-responsive {
     margin-bottom: 16px;
+    
+    @media screen and (min-width: 769px) {
+        margin-bottom: 30px;
+    }
 }
 
 .order {
@@ -47,10 +51,4 @@
 .flex {
     display: flex;
     align-items: center;
-}
-
-@media screen and (min-width: 769px) {
-    .mb-responsive {
-        margin-bottom: 30px;
-    }
 }

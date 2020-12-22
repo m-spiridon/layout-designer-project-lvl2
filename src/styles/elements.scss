@@ -14,6 +14,12 @@
 .header-menu {
     display: block;
     margin: 0 0 16px 0;
+    
+    @media screen and (min-width: 769px) {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+    }
 }
 
 .header-menu-item {
@@ -27,6 +33,11 @@
 
 .search-form {
     display: block;
+    
+    @media screen and (min-width: 769px) {
+        flex: 0 1 248px;
+        margin: 0 0 0 auto;
+    }
 }
 
 .search-input {
@@ -48,6 +59,10 @@
     font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
+    
+    @media screen and (min-width: 769px) {
+        font-size: 60px;
+    }
 }
 
 .section-title {
@@ -55,6 +70,10 @@
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
+    
+    @media screen and (min-width: 769px) {
+        font-size: 38px;
+    }
 }
 
 .header-label {
@@ -123,11 +142,19 @@
 .news-img {
     width: 100%;
     margin-bottom: 50px;
+    
+    @media screen and (min-width: 769px) {
+        margin-bottom: 0;
+    }
 }
 
 .news-title {
     font-size: 16px;
     text-transform: capitalize;
+    
+    @media screen and (min-width: 769px) {
+        font-size: 30px;
+    }
 }
 
 .news-author {
@@ -200,43 +227,14 @@
 
 .footer-menu {
     display: block;
+
+    @media screen and (min-width: 769px) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
 
 .footer-menu-item {
     margin-right: 16px;
     margin-bottom: 16px;
-}
-
-@media screen and (min-width: 769px) {
-    .search-form {
-        flex: 0 1 248px;
-        margin: 0 0 0 auto;
-    }
-
-    .header-menu {
-        display: flex;
-        flex-wrap: nowrap;
-        margin: 0;
-    }
-    
-    .main-title {
-        font-size: 60px;
-    }
-
-    .section-title {
-        font-size: 38px;
-    }
-
-    .news-title {
-        font-size: 30px;
-    }
-
-    .news-img {
-        margin-bottom: 0;
-    }
-
-    .footer-menu {
-        display: flex;
-        flex-wrap: nowrap;
-    }
 }
