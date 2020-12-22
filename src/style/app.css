@@ -10,12 +10,12 @@
   }
 }
 
-.header-top {
+.header-wrapper {
   margin-bottom: 80px;
 }
 
 @media screen and (min-width: 769px) {
-  .header-top {
+  .header-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,7 +153,7 @@
   border-bottom: 1px solid #CACACA;
 }
 
-.main-header-wrapper {
+.main-header-bg {
   padding-top: 25px;
   margin-bottom: 100px;
   background-image: url(../images/main-header.png);
@@ -162,7 +162,7 @@
   background-size: cover;
 }
 
-.morten-harket-header-wrapper {
+.morten-harket-header-bg {
   padding-top: 25px;
   margin-bottom: 100px;
   background-image: url(../images/morten-harket-header.png);
@@ -171,7 +171,7 @@
   background-size: cover;
 }
 
-.footer-wrapper {
+.footer-bg {
   padding-top: 60px;
   padding-bottom: 48px;
   background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
