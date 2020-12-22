@@ -1,5 +1,3 @@
-@import "colors";
-
 .block-center {    
     margin: 0 auto;
 }
@@ -38,7 +36,7 @@
 
 .mb-responsive {
     margin-bottom: 16px;
-    
+
     @media screen and (min-width: 769px) {
         margin-bottom: 30px;
     }
