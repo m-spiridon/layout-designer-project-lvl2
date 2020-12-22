@@ -156,7 +156,7 @@
 .main-header-bg {
   padding-top: 25px;
   margin-bottom: 100px;
-  background-image: url(../images/main-header.png);
+  background-image: url(../images/main-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,7 +165,7 @@
 .morten-harket-header-bg {
   padding-top: 25px;
   margin-bottom: 100px;
-  background-image: url(../images/morten-harket-header.png);
+  background-image: url(../images/morten-harket-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -524,7 +524,7 @@
   max-width: 374px;
   padding: 21px 24px 66px;
   margin: 0 auto 40px;
-  background-image: url(../images/subscription-free.png);
+  background-image: url(../images/subscription-free.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -545,7 +545,7 @@
   max-width: 374px;
   padding: 21px 24px 66px;
   margin: 0 auto 40px;
-  background-image: url(../images/subscription-standart.png);
+  background-image: url(../images/subscription-standart.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -566,7 +566,7 @@
   max-width: 374px;
   padding: 21px 24px 66px;
   margin: 0 auto 40px;
-  background-image: url(../images/subscription-premium.png);
+  background-image: url(../images/subscription-premium.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
