@@ -15,7 +15,7 @@
   margin-bottom: 80px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .header-wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -39,7 +39,7 @@
   margin: 0 0 16px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .logo-field {
     margin: 0 88px 0 0;
   }
@@ -75,7 +75,7 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -141,7 +141,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -218,7 +218,7 @@
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .mb-responsive {
     margin-bottom: 30px;
   }
@@ -245,7 +245,7 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .main-title {
     font-size: 60px;
   }
@@ -258,7 +258,7 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .section-title {
     font-size: 38px;
   }
@@ -269,7 +269,7 @@
   text-transform: capitalize;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .news-title {
     font-size: 30px;
   }
@@ -336,7 +336,7 @@
   margin: 0 0 16px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .header-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -360,7 +360,7 @@
   display: block;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .footer-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -379,7 +379,7 @@
   display: block;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .search-form {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 248px;
@@ -613,7 +613,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .subscription-card-title {
     font-size: 24px;
   }
@@ -628,7 +628,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .news-img {
     margin-bottom: 0;
   }
@@ -655,7 +655,7 @@ html {
 
 body {
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: normal;

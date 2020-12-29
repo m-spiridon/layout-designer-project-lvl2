@@ -9,7 +9,7 @@
   display: block;
   margin: 0 0 16px;
     
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     display: flex;
     flex-wrap: nowrap;
     margin: 0;
@@ -29,7 +29,7 @@
 .footer-menu {
   display: block;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     display: flex;
     flex-wrap: nowrap;
   }

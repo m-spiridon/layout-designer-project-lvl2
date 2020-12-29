@@ -4,7 +4,7 @@
   overflow-x: hidden;
   padding: 0 20px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $xlg) {
     padding: 0;
   }
 }
@@ -12,7 +12,7 @@
 .header-wrapper {
   margin-bottom: 80px;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@
   display: flex;
   margin: 0 0 16px;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     margin: 0 88px 0 0;
   }
 }
@@ -54,7 +54,7 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     display: flex;
     justify-content: space-between;
   }
@@ -70,7 +70,7 @@
   grid-template-columns: 1fr;
   row-gap: 25px;
 
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: $sm) {
     column-gap: 50px;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -92,11 +92,11 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 25px;
 
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: $sm) {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     grid-template-columns: repeat(4, 1fr);
   }
 }

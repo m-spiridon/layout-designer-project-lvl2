@@ -3,7 +3,7 @@
   font-weight: bold;
   text-transform: uppercase;
     
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     font-size: 60px;
   }
 }
@@ -14,7 +14,7 @@
   margin-bottom: 48px;
   text-transform: uppercase;
     
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     font-size: 38px;
   }
 }
@@ -23,7 +23,7 @@
   font-size: 16px;
   text-transform: capitalize;
     
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     font-size: 30px;
   }
 }

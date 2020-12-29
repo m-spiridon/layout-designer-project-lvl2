@@ -37,7 +37,7 @@
 .mb-responsive {
   margin-bottom: 16px;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     margin-bottom: 30px;
   }
 }

@@ -1,7 +1,7 @@
 .search-form {
   display: block;
     
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: $md) {
     flex: 0 1 248px;
     margin: 0 0 0 auto;
   }
