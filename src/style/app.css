@@ -230,13 +230,20 @@
           order: 1;
 }
 
+.color-orange {
+  color: #f89202;
+}
+
 .flex {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.ai-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-title {
@@ -276,19 +283,7 @@
 }
 
 .news-author {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 48px;
-}
-
-.author-name {
-  color: #f89202;
   font-size: 12.8px;
-  margin-right: 16px;
   text-transform: uppercase;
 }
 
@@ -617,10 +612,6 @@
   .subscription-card-title {
     font-size: 24px;
   }
-}
-
-.icons {
-  margin-right: 16px;
 }
 
 .news-img {

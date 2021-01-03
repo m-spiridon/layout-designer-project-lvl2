@@ -46,7 +46,14 @@
   order: 1;
 }
 
+.color-orange {
+  color: $orange;
+}
+
 .flex {
-  align-items: center;
   display: flex;
+}
+
+.ai-center {  
+  align-items: center;
 }
