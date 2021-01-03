@@ -30,10 +30,6 @@
   }
 }
 
-.section-wrapper {
-  margin-bottom: 100px;
-}
-
 .header-form {
   max-width: 570px;
   padding-bottom: 200px;
@@ -48,11 +44,8 @@
 
 .row {
   display: block;
-  margin: 0 -25px 65px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  margin-left: -25px;
+  margin-right: -25px;
 
   @media screen and (min-width: $md) {
     display: flex;

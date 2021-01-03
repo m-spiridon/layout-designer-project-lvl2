@@ -15,7 +15,8 @@ $subscriptions: (subscription-free, subscription-standart, subscription-premium)
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto 40px;
+    font-size: 12px;
+    margin: 0 10px 40px;
     max-width: 374px;
     padding: 21px 24px 66px;
   }
@@ -29,22 +30,25 @@ $subscriptions: (subscription-free, subscription-standart, subscription-premium)
   margin-bottom: 180px;
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: $md) {
+    font-size: 24px;   
+  }
 }
 
 .subscription-price-wrapper {
   align-items: flex-start;
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .subscription-price {
   font-size: 64px;
+  line-height: 1;
 }
 
 .subscription-currency { 
   font-size: 32px;
-  margin-left: 16px;
-  margin-top: 16px;
   text-transform: uppercase;
 }
 
@@ -52,6 +56,7 @@ $subscriptions: (subscription-free, subscription-standart, subscription-premium)
   border: 1px solid $white;
   border-radius: 5px;
   display: block;
+  font-size: 16px;
   margin-bottom: 64px;
   padding: 21px 0;
   text-align: center;
@@ -59,8 +64,3 @@ $subscriptions: (subscription-free, subscription-standart, subscription-premium)
   width: 100%;
 }
 
-@media screen and (min-width: $md) {
-  .subscription-card-title {
-    font-size: 24px;
-  }   
-}

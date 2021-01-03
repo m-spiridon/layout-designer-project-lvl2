@@ -11,7 +11,6 @@
 .section-title {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 48px;
   text-transform: uppercase;
     
   @media screen and (min-width: $md) {
@@ -29,25 +28,25 @@
 }
 
 .news-author {
-  font-size: 12.8px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
 .track-name {
-  font-size: 12.8px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .track-artist {
   color: $dark-grey;
-  font-size: 12.8px;
+  font-size: 12px;
   text-transform: capitalize;
 }
 
 .track-time {
   color: $dark-grey;
-  font-size: 12.8px;
+  font-size: 12px;
   margin-left: auto;
 }
 
