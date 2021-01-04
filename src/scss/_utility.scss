@@ -1,3 +1,28 @@
+$mbs: (16, 24, 32, 48, 64, 100);
+
+@mixin mbs($mb) {
+  .mb-#{$mb} {
+    margin-bottom: #{$mb}px;
+  }
+}
+@each $mb in $mbs {
+  @include mbs($mb);
+}
+
+.mb-md-30 {
+  @media screen and (min-width: $md) {
+    margin-bottom: 30px;
+  }
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
 .block-center {    
   margin: 0 auto;
 }
@@ -8,44 +33,6 @@
 
 .text-grey {
   color: $dark-grey;
-}
-
-.mb-16 {
-  margin-bottom: 16px;
-}
-
-.mb-24 {
-  margin-bottom: 24px;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-.mb-md-30 {
-  @media screen and (min-width: $md) {
-    margin-bottom: 30px;
-  }
-}
-
-.mb-48 {
-  margin-bottom: 48px;
-}
-
-.mb-64 {
-  margin-bottom: 64px;
-}
-
-.mb-100 {
-  margin-bottom: 100px;
-}
-
-.mr-16 {
-  margin-right: 16px;
-}
-
-.mr-24 {
-  margin-right: 24px;
 }
 
 .fz-16 {
