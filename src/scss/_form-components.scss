@@ -12,22 +12,23 @@
   border: none;
   border-radius: 50px;
   color: $grey;
-  font-family: Arial;
-  font-size: 13.3px;
+  font-family: inherit;
+  font-size: 13px;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.13;
+  line-height: 1.2;
   padding: 5px 10px;
   text-transform: uppercase;
   width: 100%;
 }
 
-.header-label {
-  flex: 1 0 270px;
-  padding: 0 15px;
+.header-inputs-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.header-input {
+.lead-input {
   background-color: transparent;
   border: 2px solid $white;
   border-radius: 3px;
@@ -36,13 +37,17 @@
   font-size: 14px;
   font-style: inherit;
   font-weight: bold;
-  line-height: 1.14;
+  line-height: 1.17;
   margin-bottom: 30px;
-  padding: 16px 22px 18px;
+  padding: 15px 22px;
   width: 100%;
+
+  @media screen and (min-width:$md) {
+    width: 270px;
+  }
 }
 
-.header-input::placeholder {
+.lead-input::placeholder {
   color: inherit;
   opacity: 1;
 }

@@ -148,18 +148,6 @@
   padding-bottom: 200px;
 }
 
-.header-inputs-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 -15px;
-}
-
 .row {
   display: block;
   margin-left: -25px;
@@ -408,24 +396,28 @@
   border: none;
   border-radius: 50px;
   color: #e0e0e0;
-  font-family: Arial;
-  font-size: 13.3px;
+  font-family: inherit;
+  font-size: 13px;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.13;
+  line-height: 1.2;
   padding: 5px 10px;
   text-transform: uppercase;
   width: 100%;
 }
 
-.header-label {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 270px;
-          flex: 1 0 270px;
-  padding: 0 15px;
+.header-inputs-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.header-input {
+.lead-input {
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 3px;
@@ -434,28 +426,34 @@
   font-size: 14px;
   font-style: inherit;
   font-weight: bold;
-  line-height: 1.14;
+  line-height: 1.17;
   margin-bottom: 30px;
-  padding: 16px 22px 18px;
+  padding: 15px 22px;
   width: 100%;
 }
 
-.header-input::-webkit-input-placeholder {
+@media screen and (min-width: 768px) {
+  .lead-input {
+    width: 270px;
+  }
+}
+
+.lead-input::-webkit-input-placeholder {
   color: inherit;
   opacity: 1;
 }
 
-.header-input:-ms-input-placeholder {
+.lead-input:-ms-input-placeholder {
   color: inherit;
   opacity: 1;
 }
 
-.header-input::-ms-input-placeholder {
+.lead-input::-ms-input-placeholder {
   color: inherit;
   opacity: 1;
 }
 
-.header-input::placeholder {
+.lead-input::placeholder {
   color: inherit;
   opacity: 1;
 }
@@ -638,6 +636,14 @@
 .artist-img {
   margin-bottom: 18px;
   width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 *,
