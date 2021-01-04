@@ -9,6 +9,18 @@ $orange: #f89202;
 $purple: #5328a1;
 $red: #95390c;
 
+$colors: (
+    "white": $white,
+    "black": $black,
+    "grey": $grey,
+    "dark-grey": $dark-grey,
+    "dark": $dark,
+    "green": $green,
+    "orange": $orange,
+    "purple": $purple,
+    "red": $red
+);
+
 // Breakpoints
 $sm: 550px;
 $md: 768px;
