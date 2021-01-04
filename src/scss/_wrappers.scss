@@ -1,7 +1,6 @@
 .content-wrapper {
   margin: 0 auto;
   max-width: 1200px;
-  overflow-x: hidden;
   padding: 0 20px;
 
   @media (min-width: $xlg) {
@@ -17,16 +16,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 150px;
-  }
-}
-
-.logo-field {
-  align-items: center;
-  display: flex;
-  margin: 0 0 16px;
-
-  @media screen and (min-width: $md) {
-    margin: 0 88px 0 0;
   }
 }
 
