@@ -32,3 +32,19 @@
   position: relative;
   display: inline-block;
 }
+
+.order-md-1 {
+  @media screen and (min-width: $md) {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.order-md-2 {
+  @media screen and (min-width: $md) {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
