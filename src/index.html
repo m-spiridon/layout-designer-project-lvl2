@@ -14,22 +14,21 @@
 
     <div class="main-header-bg mb-100">
         <header class="header-wrapper content-wrapper">
-            <a class="logo-field menu-hover" href="http://m-spiridon-p2.surge.sh">
+            <a class="logo-field scale-hover" href="http://m-spiridon-p2.surge.sh">
                 <img class="mr-16" src="images/logo.svg" alt="Иконка музыкальной ноты" width="24" height="24">
                 <h1 class="logo-name">Music Box</h1>
             </a>
             <nav>
                 <ul class="header-menu">
-                    <li><a class="header-menu-item menu-hover" href="http://m-spiridon-p2.surge.sh">Главная</a></li>
-                    <li><a class="header-menu-item menu-hover" href="#">Каталог</a></li>
-                    <li><a class="header-menu-item menu-hover" href="http://m-spiridon-p2.surge.sh/artist">Исполнители</a></li>
-                    <li><a class="header-menu-item menu-hover" href="#">Контакты</a></li>
+                    <li><a class="header-menu-item scale-hover" href="http://m-spiridon-p2.surge.sh">Главная</a></li>
+                    <li><a class="header-menu-item scale-hover" href="#">Каталог</a></li>
+                    <li><a class="header-menu-item scale-hover" href="http://m-spiridon-p2.surge.sh/artist">Исполнители</a></li>
+                    <li><a class="header-menu-item scale-hover" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <form class="search-form">
-                <label>
-                    <input class="search-input menu-hover" type="text" placeholder="Поиск...">
-                </label>
+                <label for="search" class="visually-hidden">Поиск</label>
+                <input id="search" class="search-input scale-hover" type="text" placeholder="Поиск...">
             </form>
         </header>
     
@@ -42,8 +41,8 @@
                 <label for="name" class="visually-hidden">Имя</label>
                 <label for="email" class="visually-hidden">И-мейл</label>
                 <div class="header-inputs-wrapper">
-                    <input id="name" class="lead-input" type="text" placeholder="Имя">
-                    <input id="email" class="lead-input" type="text" placeholder="Email">
+                    <input id="name" class="lead-input scale-hover" type="text" placeholder="Имя">
+                    <input id="email" class="lead-input scale-hover" type="text" placeholder="Email">
                 </div>
                 <button class="btn w-100pr btn-green">Получить доступ</button>
             </form>
@@ -57,7 +56,7 @@
             <div class="content-wrapper">
                 <h2 class="section-title text-center mb-48">Формы подписки</h2>
     
-                <div class="subscription-cards-container">
+                <div class="test">
                     <div class="subscription-free-card">
                         <h3 class="subscription-card-title">Бесплатная</h3>
                         <div class="subscription-price-wrapper">
@@ -104,7 +103,7 @@
     
                 <div class="row mb-64">
                     <div class="column text-center">
-                        <img class="news-img" src="images/Music-to-Be-Murdered-By.jpg" alt="Фотография Эминема" width="570"
+                        <img class="mb-48 mb-md" src="images/Music-to-Be-Murdered-By.jpg" alt="Фотография Эминема" width="570"
                             height="284">
                     </div>
                     <div class="column">
@@ -125,7 +124,7 @@
     
                 <div class="row">
                     <div class="column text-center order">
-                        <img class="news-img" src="images/Ordinary-Man.jpg" alt="Фотография Оззи Озборна" width="570"
+                        <img class="mb-48 mb-md-0" src="images/Ordinary-Man.jpg" alt="Фотография Оззи Озборна" width="570"
                         height="284">
                     </div>
                     <div class="column">
@@ -172,28 +171,28 @@
         
         <div class="footer-top">
             <div class="content-wrapper">
-                <div class="row">
-                    <div class="column">
+                <div class="test">
+                    <div class="mr-24">
                         <h2 class="footer-title">О нас</h2>
                         <ul class="text-grey mb-32">
-                            <li><a class="menu-hover" href="#">История компании</a></li>
-                            <li><a class="menu-hover" href="#">Карьера</a></li>
-                            <li><a class="menu-hover" href="#">Особенности</a></li>
-                            <li><a class="menu-hover" href="#">Пресса</a></li>
+                            <li><a class="scale-hover" href="#">История компании</a></li>
+                            <li><a class="scale-hover" href="#">Карьера</a></li>
+                            <li><a class="scale-hover" href="#">Особенности</a></li>
+                            <li><a class="scale-hover" href="#">Пресса</a></li>
                         </ul>
                     </div>
             
-                    <div class="column">
+                    <div class="mr-24">
                         <h2 class="footer-title">Поддержка</h2>
                         <ul class="text-grey mb-32">
-                            <li><a class="menu-hover" href="#">База знаний</a></li>
-                            <li><a class="menu-hover" href="#">Тарифы</a></li>
-                            <li><a class="menu-hover" href="#">Мобильное приложение</a></li>
-                            <li class="menu-hover"><a href="#">Условия использования</a></li>
+                            <li><a class="scale-hover" href="#">База знаний</a></li>
+                            <li><a class="scale-hover" href="#">Тарифы</a></li>
+                            <li><a class="scale-hover" href="#">Мобильное приложение</a></li>
+                            <li><a class="scale-hover" href="#">Условия использования</a></li>
                         </ul>
                     </div>
             
-                    <div class="column">
+                    <div class="mr-24">
                         <h2 class="footer-title">Контакты</h2>
                         <ul class="text-grey mb-32">
                             <li class="">hello@music.box</li>
@@ -202,14 +201,12 @@
                         </ul>
                     </div>
             
-                    <div class="column">
+                    <div class="mr-24">
                         <h2 class="footer-title">Подписывайтесь</h2>
-                        <div>
-                            <a class="mr-24" href="#"><img class="menu-hover scale" src="images/Google+.png" alt="Иконка гугл плюс"></a>
-                            <a class="menu-hover mr-24" href="#"><img class="menu-hover scale" src="images/Twitter.png" alt="Иконка твиттера"></a>
-                            <a class="menu-hover mr-24" href="#"><img class="menu-hover scale" src="images/Facebook.png" alt="Иконка фейсбука"></a>
-                            <a class="menu-hover mr-24" href="#"><img class="menu-hover scale" src="images/Instagram.png" alt="Иконка инстраграма"></a>
-                        </div>
+                        <div class="click-area-parent mr-24"><a class="click-area" href="#"><img src="images/Google+.png" alt="Иконка гугл плюс"></a></div>
+                        <div class="click-area-parent mr-24"><a class="click-area" href="#"><img src="images/Twitter.png" alt="Иконка твиттера"></a></div>
+                        <div class="click-area-parent mr-24"><a class="click-area" href="#"><img src="images/Facebook.png" alt="Иконка фейсбука"></a></div>
+                        <div class="click-area-parent mr-24"><a class="click-area" href="#"><img src="images/Instagram.png" alt="Иконка инстраграма"></a></div>
                     </div>
                 </div>
             </div>
@@ -217,11 +214,11 @@
 
         <nav class="content-wrapper">
             <ul class="footer-menu text-grey">
-                <li class="menu-hover mb-16 mr-16"><a href="#">Магазин</a></li>
-                <li class="menu-hover mb-16 mr-16"><a href="#">Обслуживание</a></li>
-                <li class="menu-hover mb-16 mr-16"><a href="#">Блог</a></li>
-                <li class="menu-hover mb-16 mr-16"><a href="#">Поддержка</a></li>
-                <li class="menu-hover mb-16 mr-16"><a href="#">Контакты</a></li>
+                <li class="scale-hover mb-16 mr-16"><a href="#">Магазин</a></li>
+                <li class="scale-hover mb-16 mr-16"><a href="#">Обслуживание</a></li>
+                <li class="scale-hover mb-16 mr-16"><a href="#">Блог</a></li>
+                <li class="scale-hover mb-16 mr-16"><a href="#">Поддержка</a></li>
+                <li class="scale-hover mb-16 mr-16"><a href="#">Контакты</a></li>
             </ul>
         </nav>
 

@@ -33,20 +33,26 @@
   color: inherit;
 }
 
-.footer-menu {
-  display: block;
-
-  @media screen and (min-width: $md) {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-}
-
-.menu-hover {
+.scale-hover {
   transition: 0.1s;
 
   &:hover {
     transform: scale(1.05);
     color: $white;
   }  
+}
+
+.footer-menu {
+  display: block;
+
+  @media screen and (min-width: $sm) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
