@@ -2,7 +2,7 @@
   display: block;
   margin: 0 0 16px;
     
-  @media screen and (min-width: $md) {
+  @media screen and (min-width: $lg) {
     display: flex;
     flex-wrap: nowrap;
     margin: 0;
@@ -23,7 +23,7 @@
   display: flex;
   margin: 0 0 16px 0;
 
-  @media screen and (min-width: $md) {
+  @media screen and (min-width: $lg) {
     margin: 0 88px 0 0;
   }
 }
@@ -42,6 +42,12 @@
   }  
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .footer-menu {
   display: block;
 
@@ -49,10 +55,4 @@
     display: flex;
     flex-wrap: nowrap;
   }
-}
-
-.test {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }

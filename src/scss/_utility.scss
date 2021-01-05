@@ -1,12 +1,16 @@
-$mbs: (16, 24, 32, 48, 64, 100);
+$sizes: (12, 16, 18, 24, 32, 48, 64, 100);
 
-@mixin mbs($mb) {
-  .mb-#{$mb} {
-    margin-bottom: #{$mb}px;
+@mixin sizes($size) {
+  .mb-#{$size} {
+    margin-bottom: #{$size}px;
   }
+
+  .fz-#{$size} {
+    font-size: #{$size}px;
+  }  
 }
-@each $mb in $mbs {
-  @include mbs($mb);
+@each $size in $sizes {
+  @include sizes($size);
 }
 
 .mb-md-32 {
@@ -29,6 +33,10 @@ $mbs: (16, 24, 32, 48, 64, 100);
   margin-right: 24px;
 }
 
+// .mr-auto {
+//   margin-right: auto;
+// }
+
 .pt-24 {
   padding-top: 24px;
 }
@@ -37,20 +45,24 @@ $mbs: (16, 24, 32, 48, 64, 100);
   margin: auto;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-grey {
   color: $dark-grey;
-}
-
-.fz-16 {
-  font-size: 16px !important;
-}
-
-.fz-64 {
-  font-size: 64px;
 }
 
 .color-orange {
@@ -64,6 +76,10 @@ $mbs: (16, 24, 32, 48, 64, 100);
 .inline-flex {
   display: inline-flex !important;
 }
+
+// .inline-block {
+//   display: inline-block;
+// }
 
 .ai-center {  
   align-items: center;
