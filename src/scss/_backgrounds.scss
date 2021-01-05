@@ -1,4 +1,8 @@
-$bg-imgs: (main-header, morten-harket-header);
+//put names of background images in list $bg-imgs
+
+$bg-imgs: (main-header, morten-harket-header, 
+           subscription-free, subscription-standart, subscription-premium,
+           eminem, ozzy);
 
 @mixin bg-img ($name) {
   .#{$name}-bg {
@@ -6,7 +10,8 @@ $bg-imgs: (main-header, morten-harket-header);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 25px;
+    min-width: 1px;
+    min-height: 200px;
   }
 }
 @each $bg-img-name in $bg-imgs {

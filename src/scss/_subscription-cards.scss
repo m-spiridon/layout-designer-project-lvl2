@@ -1,28 +1,11 @@
-.subscription-cards-wrapper {
+.subscription-card {
+  align-items: center;
+  border-radius: 20px;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-$subscriptions: (subscription-free, subscription-standart, subscription-premium);
-
-@mixin subscription-card ($name) {
-  .#{$name}-card {
-    align-items: center;
-    background-image: url(../images/#{$name}.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    max-width: 405px;
-    padding: 21px 24px 66px;
-  }
-}
-@each $subscription in $subscriptions {
-  @include subscription-card($subscription);
+  flex-direction: column;
+  font-size: 12px;
+  max-width: 405px;
+  padding: 21px 24px 66px;
 }
 
 .subscription-card-title {
