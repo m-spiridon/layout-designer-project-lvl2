@@ -19,6 +19,12 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
   }
 }
 
+.mb-sm-0 {
+  @media screen and (min-width: $sm) {
+    margin-bottom: 0;
+  }
+}
+
 .mb-md-0 {
   @media screen and (min-width: $md) {
     margin-bottom: 0;

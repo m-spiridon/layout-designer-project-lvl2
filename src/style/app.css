@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (min-width: 550px) {
+  .mb-sm-0 {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mb-md-0 {
     margin-bottom: 0;
