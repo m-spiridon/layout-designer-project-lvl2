@@ -96,8 +96,8 @@
   padding-top: 24px;
 }
 
-.block-center {
-  margin: auto;
+.m-0-auto {
+  margin: 0 auto;
 }
 
 .bold {
@@ -116,7 +116,7 @@
   text-align: center;
 }
 
-.text-grey {
+.color-grey {
   color: #cacaca;
 }
 
@@ -191,9 +191,7 @@
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   row-gap: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
 }
 
 @media screen and (min-width: 820px) {
@@ -238,6 +236,9 @@
       grid-template-columns: 50px max-content auto max-content;
   -webkit-column-gap: 16px;
           column-gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid-2-3-4 {

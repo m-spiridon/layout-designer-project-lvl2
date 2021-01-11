@@ -51,8 +51,8 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
   padding-top: 24px;
 }
 
-.block-center {    
-  margin: auto;
+.m-0-auto {    
+  margin: 0 auto;
 }
 
 .bold {
@@ -71,7 +71,7 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
   text-align: center;
 }
 
-.text-grey {
+.color-grey {
   color: $dark-grey;
 }
 
