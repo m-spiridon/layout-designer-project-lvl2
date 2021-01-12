@@ -1,4 +1,19 @@
-//put names of background images in list $bg-imgs
+$sizes: (12, 16, 18, 24, 32, 48, 64, 100);
+
+@mixin sizes($size) {
+  .mb-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+
+  .fz-#{$size} {
+    font-size: #{$size}px;
+  }  
+}
+@each $size in $sizes {
+  @include sizes($size);
+}
+
+//put names of background images in a list $bg-imgs
 
 $bg-imgs: (main-header, morten-harket-header, 
            subscription-free, subscription-standart, subscription-premium,
@@ -16,10 +31,4 @@ $bg-imgs: (main-header, morten-harket-header,
 }
 @each $bg-img-name in $bg-imgs {
   @include bg-img($bg-img-name);
-}
-
-.footer-bg {    
-  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
-  padding-bottom: 48px;
-  padding-top: 60px;
 }

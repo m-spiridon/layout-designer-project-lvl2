@@ -1,0 +1,26 @@
+.footer-bg {    
+    background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
+    padding-bottom: 48px;
+    padding-top: 60px;
+}
+
+.footer-top {
+    border-bottom: 1px solid $dark-grey;
+    margin-bottom: 40px;
+    padding-bottom: 75px;
+}
+
+.footer-top-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  display: block;
+
+  @media screen and (min-width: $sm) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}

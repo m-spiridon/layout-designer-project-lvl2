@@ -1,17 +1,4 @@
-$sizes: (12, 16, 18, 24, 32, 48, 64, 100);
-
-@mixin sizes($size) {
-  .mb-#{$size} {
-    margin-bottom: #{$size}px;
-  }
-
-  .fz-#{$size} {
-    font-size: #{$size}px;
-  }  
-}
-@each $size in $sizes {
-  @include sizes($size);
-}
+//MARGINS, PADDINGS
 
 .mb-md-32 {
   @media screen and (min-width: $md) {
@@ -31,6 +18,12 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
   }
 }
 
+.mb-lg-0 {
+  @media screen and (min-width: $lg) {
+    margin-bottom: 0;
+  }
+}
+
 .mr-4 {
   margin-right: 4px;
 }
@@ -43,9 +36,11 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
   margin-right: 24px;
 }
 
-// .mr-auto {
-//   margin-right: auto;
-// }
+.mr-lg-64 {
+  @media screen and (min-width: $lg) {
+    margin-right: 64px;
+  }
+}
 
 .pt-24 {
   padding-top: 24px;
@@ -54,6 +49,8 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
 .m-0-auto {    
   margin: 0 auto;
 }
+
+//TEXT STYLE
 
 .bold {
   font-weight: bold;
@@ -71,6 +68,10 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
   text-align: center;
 }
 
+.color-white {
+  color: $white;
+}
+
 .color-grey {
   color: $dark-grey;
 }
@@ -79,6 +80,8 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
   color: $orange;
 }
 
+//BOX-MODEL
+
 .flex {
   display: flex;
 }
@@ -86,10 +89,6 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
 .inline-flex {
   display: inline-flex !important;
 }
-
-// .inline-block {
-//   display: inline-block;
-// }
 
 .ai-center {  
   align-items: center;
@@ -105,4 +104,70 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
 
 .br-30 {
   border-radius: 30px !important;
+}
+
+//OTHER
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+
+  @media (min-width: $xlg) {
+    padding: 0;
+  }
+}
+
+.scale-hover {
+  transition: 0.1s;
+
+  &:hover {
+    transform: scale(1.05);
+    color: $white;
+  }  
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.click-area {
+  transition: 0.1s;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    bottom: -8px;
+    left: -10px;
+    right: -10px;
+    background: transparent;
+  }
+  &:hover {    
+    transform: scale(1.3);
+  }
+}
+
+.click-area-parent {
+  position: relative;
+  display: inline-block;
+}
+
+.order-md-1 {
+  @media screen and (min-width: $md) {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.order-md-2 {
+  @media screen and (min-width: $md) {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+  }
 }
