@@ -21,8 +21,19 @@ $colors: (
     "red": $red
 );
 
+//Sizes
+
+$sizes: (0, 12, 16, 18, 24, 32, 48, 64, 100);
+
 // Breakpoints
 $sm: 550px;
 $md: 768px;
 $lg: 876px;
 $xlg: 1200px;
+
+$breakpoints: (
+    "sm": $sm,
+    "md": $md,
+    "lg": $lg,
+    "xlg": $xlg
+);

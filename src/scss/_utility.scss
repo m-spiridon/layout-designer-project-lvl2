@@ -1,28 +1,4 @@
-//MARGINS, PADDINGS
-
-.mb-md-32 {
-  @media screen and (min-width: $md) {
-    margin-bottom: 32px;
-  }
-}
-
-.mb-sm-0 {
-  @media screen and (min-width: $sm) {
-    margin-bottom: 0;
-  }
-}
-
-.mb-md-0 {
-  @media screen and (min-width: $md) {
-    margin-bottom: 0;
-  }
-}
-
-.mb-lg-0 {
-  @media screen and (min-width: $lg) {
-    margin-bottom: 0;
-  }
-}
+//Margins, Paddings
 
 .mr-4 {
   margin-right: 4px;
@@ -50,7 +26,7 @@
   margin: 0 auto;
 }
 
-//TEXT STYLE
+//Text style
 
 .bold {
   font-weight: bold;
@@ -80,7 +56,7 @@
   color: $orange;
 }
 
-//BOX-MODEL
+//Box-model
 
 .flex {
   display: flex;
@@ -106,7 +82,7 @@
   border-radius: 30px !important;
 }
 
-//OTHER
+//Other
 
 .content-wrapper {
   margin: 0 auto;

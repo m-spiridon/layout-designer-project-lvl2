@@ -1,8 +1,12 @@
-$sizes: (12, 16, 18, 24, 32, 48, 64, 100);
+//Margins, Font-sizes
 
 @mixin sizes($size) {
   .mb-#{$size} {
     margin-bottom: #{$size}px;
+  }
+
+  .mr-#{$size} {
+    margin-right: #{$size}px;
   }
 
   .fz-#{$size} {
@@ -13,7 +17,28 @@ $sizes: (12, 16, 18, 24, 32, 48, 64, 100);
   @include sizes($size);
 }
 
-//put names of background images in a list $bg-imgs
+//Responsive margins
+
+@mixin responsive-sizes($breakpoint-name, $breakpoint, $size) {
+    .mb-#{$breakpoint-name}-#{$size} {
+        @media screen and (min-width: $breakpoint) {
+          margin-bottom: #{$size}px;
+        }        
+    }
+
+    .mr-#{$breakpoint-name}-#{$size} {
+        @media screen and (min-width: $breakpoint) {
+          margin-right: #{$size}px;
+        }        
+    }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+    @each $size in $sizes {
+        @include responsive-sizes($breakpoint-name, $breakpoint, $size);
+    }
+}
+
+//Put names of background images in a list $bg-imgs
 
 $bg-imgs: (main-header, morten-harket-header, 
            subscription-free, subscription-standart, subscription-premium,
