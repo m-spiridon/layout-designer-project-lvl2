@@ -1,23 +1,4 @@
 //Margins, Paddings
-
-.mr-4 {
-  margin-right: 4px;
-}
-
-.mr-16 {
-  margin-right: 16px;
-}
-
-.mr-24 {
-  margin-right: 24px;
-}
-
-.mr-lg-64 {
-  @media screen and (min-width: $lg) {
-    margin-right: 64px;
-  }
-}
-
 .pt-24 {
   padding-top: 24px;
 }
