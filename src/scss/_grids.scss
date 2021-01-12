@@ -1,49 +1,54 @@
 .grid-1-3 {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 40px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 40px;
   
-    @media screen and (min-width: $lg) {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 20px;
-    }
+  @media screen and (min-width: $lg) {
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 20px;
+  }
   
-    @media screen and (min-width: $xlg) {
-      column-gap: 40px;
-    }
+  @media screen and (min-width: $xlg) {
+    column-gap: 40px;
+  }
 }
 
 .grid-1-2 {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 24px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
   
-    @media screen and (min-width: $md) {
-      column-gap: 50px;
-      grid-template-columns: repeat(2, 1fr);
-    }
+  @media screen and (min-width: $md) {
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 50px;
+  }
 }
 
 .track-grid {
-    display: grid;
-    grid-template-columns: 50px max-content auto max-content;
-    column-gap: 16px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 50px max-content auto max-content;
+  align-items: center;
+
+  column-gap: 16px;
 }
 
 .grid-2-3-4 {
-    column-gap: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 50px;
+  row-gap: 25px;
   
-    @media screen and (min-width: $sm) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  @media screen and (min-width: $sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
   
-    @media screen and (min-width: $md) {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  @media screen and (min-width: $md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

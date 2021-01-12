@@ -1,33 +1,34 @@
 .header-wrapper {
-    display: block;
-    margin-bottom: 80px;
+  display: block;
+  margin-bottom: 80px;
   
-    @media screen and (min-width: $lg) {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 150px;
-    }
+  @media screen and (min-width: $lg) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 150px;
+  }
 }
 
 .header-menu {
-    display: block;
-    margin: 0 0 16px;
+  display: block;
+  margin: 0 0 16px;
       
-    @media screen and (min-width: $lg) {
-      display: flex;
-      flex-wrap: nowrap;
-      margin: 0;
-    }
+  @media screen and (min-width: $lg) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
 }
   
 .header-menu-item {
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1.18;
-    text-transform: uppercase;
-    color: $dark-grey;
-    padding: 0 12px;
+  padding: 0 12px;
+
+  color: $dark-grey;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.18;
+  text-transform: uppercase;
 }
 
 .header-form {

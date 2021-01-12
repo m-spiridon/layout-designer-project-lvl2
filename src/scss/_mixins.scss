@@ -20,38 +20,39 @@
 //Responsive margins
 
 @mixin responsive-sizes($breakpoint-name, $breakpoint, $size) {
-    .mb-#{$breakpoint-name}-#{$size} {
-        @media screen and (min-width: $breakpoint) {
-          margin-bottom: #{$size}px;
-        }        
-    }
+  .mb-#{$breakpoint-name}-#{$size} {
+    @media screen and (min-width: $breakpoint) {
+      margin-bottom: #{$size}px;
+    }        
+  }
 
-    .mr-#{$breakpoint-name}-#{$size} {
-        @media screen and (min-width: $breakpoint) {
-          margin-right: #{$size}px;
-        }        
-    }
+  .mr-#{$breakpoint-name}-#{$size} {
+    @media screen and (min-width: $breakpoint) {
+      margin-right: #{$size}px;
+    }        
+  }
 }
 @each $breakpoint-name, $breakpoint in $breakpoints {
-    @each $size in $sizes {
-        @include responsive-sizes($breakpoint-name, $breakpoint, $size);
-    }
+  @each $size in $sizes {
+    @include responsive-sizes($breakpoint-name, $breakpoint, $size);
+  }
 }
 
 //Put names of background images in a list $bg-imgs
 
 $bg-imgs: (main-header, morten-harket-header, 
-           subscription-free, subscription-standart, subscription-premium,
-           eminem, ozzy);
+subscription-free, subscription-standart, subscription-premium,
+eminem, ozzy);
 
 @mixin bg-img ($name) {
   .#{$name}-bg {
-    background-image: url(../images/#{$name}.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     min-width: 1px;
     min-height: 200px;
+
+    background-image: url(../images/#{$name}.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @each $bg-img-name in $bg-imgs {

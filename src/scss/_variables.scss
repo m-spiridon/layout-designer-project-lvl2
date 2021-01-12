@@ -10,15 +10,15 @@ $purple: #5328a1;
 $red: #95390c;
 
 $colors: (
-    "white": $white,
-    "black": $black,
-    "grey": $grey,
-    "dark-grey": $dark-grey,
-    "dark": $dark,
-    "green": $green,
-    "orange": $orange,
-    "purple": $purple,
-    "red": $red
+  'white': $white,
+  'black': $black,
+  'grey': $grey,
+  'dark-grey': $dark-grey,
+  'dark': $dark,
+  'green': $green,
+  'orange': $orange,
+  'purple': $purple,
+  'red': $red
 );
 
 //Sizes
@@ -32,8 +32,8 @@ $lg: 876px;
 $xlg: 1200px;
 
 $breakpoints: (
-    "sm": $sm,
-    "md": $md,
-    "lg": $lg,
-    "xlg": $xlg
+  'sm': $sm,
+  'md': $md,
+  'lg': $lg,
+  'xlg': $xlg
 );

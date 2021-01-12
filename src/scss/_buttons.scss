@@ -1,27 +1,32 @@
 .btn {
+  display: inline-block;
+  padding: 20px 30px;
   border: 1px solid $white;
   border-radius: 5px;
+
   color: inherit;
-  background-color: transparent;
-  display: inline-block;
   font-size: 13px;
-  padding: 20px 30px;
   text-transform: uppercase;
+
+  background-color: transparent;
+
   transition: 0.25s;
 
   &:hover,
   &:focus {
+    border: 1px solid $white;
+
+    outline: none;
     box-shadow: 0 0.5em 0.5em -0.4em $white;
     transform: translateY(-0.25em);
-    outline: none;
-    border: 1px solid $white;
   }
 }
 
 @mixin btn-color($color-name, $color) {
   .btn-#{$color-name} {
-    background-color: $color;
     border-color: $color;
+
+    background-color: $color;
   }
 }
 @each $color-name, $color in $colors {

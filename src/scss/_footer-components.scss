@@ -1,13 +1,14 @@
-.footer-bg {    
-    background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
-    padding-bottom: 48px;
-    padding-top: 60px;
+.footer-bg {
+  padding-top: 60px;
+  padding-bottom: 48px;
+  
+  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
 }
 
 .footer-top {
-    border-bottom: 1px solid $dark-grey;
-    margin-bottom: 40px;
-    padding-bottom: 75px;
+  margin-bottom: 40px;
+  padding-bottom: 75px;
+  border-bottom: 1px solid $dark-grey;
 }
 
 .footer-top-inner {

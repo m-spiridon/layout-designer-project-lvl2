@@ -8,18 +8,20 @@
 }
 
 .search-input {
-  background-color: $dark;
-  border: none;
-  border-radius: 50px;
-  color: $grey;
-  font-family: inherit;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.2;
-  padding: 5px 10px;
-  text-transform: uppercase;
   width: 100%;
+  padding: 5px 10px;
+  border-style: none;
+  border-radius: 50px;
+
+  color: $grey;
+  font-weight: normal;
+  font-size: 13px;
+  font-family: inherit;
+  font-style: normal;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  background-color: $dark;
   outline: none;
 }
 
@@ -30,18 +32,20 @@
 }
 
 .lead-input {
-  background-color: transparent;
-  border: 2px solid $white;
-  border-radius: 3px;
-  color: inherit;
-  font-family: inherit;
-  font-size: 14px;
-  font-style: inherit;
-  font-weight: bold;
-  line-height: 1.17;
+  width: 100%;
   margin-bottom: 30px;
   padding: 15px 22px;
-  width: 100%;
+  border: 2px solid $white;
+  border-radius: 3px;
+
+  color: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: inherit;
+  font-style: inherit;
+  line-height: 1.17;
+
+  background-color: transparent;
 
   @media screen and (min-width:$md) {
     width: 270px;
@@ -50,5 +54,6 @@
 
 .lead-input::placeholder {
   color: inherit;
+
   opacity: 1;
 }
