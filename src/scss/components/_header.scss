@@ -10,6 +10,15 @@
   }
 }
 
+.header-search {
+  display: block;
+    
+  @media screen and (min-width: $md) {
+    flex: 0 1 248px;
+    margin: 0 0 0 auto;
+  }
+}
+
 .header-menu {
   display: block;
   margin: 0 0 16px;
