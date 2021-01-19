@@ -3,6 +3,14 @@
   padding-top: 24px !important;
 }
 
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
+}
+
 .my-0 {    
   margin: 0 auto !important;
 }
@@ -74,6 +82,10 @@
 }
 
 //Other
+
+.linear-gradient {
+  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
+}
 
 .content-wrapper {
   max-width: 1200px;
