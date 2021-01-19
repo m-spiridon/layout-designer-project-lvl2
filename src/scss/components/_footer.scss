@@ -1,16 +1,16 @@
-.footer-top {
+.footer-links-wrapper {
   margin-bottom: 40px;
   padding-bottom: 75px;
   border-bottom: 1px solid $dark-grey;
 }
 
-.footer-top-inner {
+.footer-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.footer-bottom {
+.footer-menu {
   display: block;
 
   @media screen and (min-width: $sm) {
