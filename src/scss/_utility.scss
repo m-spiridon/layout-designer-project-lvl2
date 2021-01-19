@@ -1,46 +1,56 @@
 //Margins, Paddings
 .pt-24 {
-  padding-top: 24px;
+  padding-top: 24px !important;
 }
 
 .my-0 {    
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 //Text style
 
 .bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .capital {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .color-white {
-  color: $white;
+  color: $white !important;
 }
 
 .color-grey {
-  color: $dark-grey;
+  color: $dark-grey !important;
 }
 
 .color-orange {
-  color: $orange;
+  color: $orange !important;
+}
+
+//Position
+
+.relative {
+  position: relative;
 }
 
 //Box-model
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
-  display: flex;
+  display: flex !important;
 }
 
 .inline-flex {
@@ -48,15 +58,15 @@
 }
 
 .ai-center {  
-  align-items: center;
+  align-items: center !important;
 }
 
 .w-200 {
-  width: 200px;
+  width: 200px !important;
 }
 
 .w-100pr {
-  width: 100%;
+  width: 100% !important;
 }
 
 .br-30 {
@@ -67,7 +77,8 @@
 
 .content-wrapper {
   max-width: 1200px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 20px;
 
   @media (min-width: $xlg) {
@@ -100,10 +111,6 @@
 
   &::after {
     position: absolute;
-    top: -12px;
-    right: -10px;
-    bottom: -8px;
-    left: -10px;
 
     background: transparent;
 
@@ -115,10 +122,40 @@
   }
 }
 
-.click-area-parent {
-  position: relative;
+.click-area-google {
+  &::after {
+    top: -14px;
+    right: -10px;
+    bottom: -7px;
+    left: -10px;
+  }
+}
 
-  display: inline-block;
+.click-area-twitter {
+  &::after {
+    top: -13px;
+    right: -11px;
+    bottom: -5px;
+    left: -10px;
+  }
+}
+
+.click-area-fb {
+  &::after {
+    top: -12px;
+    right: -13px;
+    bottom: -6px;
+    left: -11px;
+  }
+}
+
+.click-area-inst {
+  &::after {
+    top: -12px;
+    right: -12px;
+    bottom: -6px;
+    left: -10px;
+  }
 }
 
 .order-md-1 {
