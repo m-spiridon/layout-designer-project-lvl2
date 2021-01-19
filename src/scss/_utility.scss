@@ -1,4 +1,18 @@
-//Margins, Paddings
+//Margins, Paddings, Font-sizes
+@each $size in $sizes {
+  .mb-#{$size} {
+    margin-bottom: #{$size}px !important;
+  }
+
+  .mr-#{$size} {
+    margin-right: #{$size}px !important;
+  }
+
+  .fz-#{$size} {
+    font-size: #{$size}px !important;
+  }
+}
+
 .pt-24 {
   padding-top: 24px !important;
 }
@@ -18,6 +32,24 @@
 
 .ml-auto {
   margin-left: auto;
+}
+
+//Responsive margins
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @each $size in $sizes {
+    .mb-#{$breakpoint-name}-#{$size} {
+      @media screen and (min-width: $breakpoint) {
+        margin-bottom: #{$size}px !important;
+      }        
+    }
+  
+    .mr-#{$breakpoint-name}-#{$size} {
+      @media screen and (min-width: $breakpoint) {
+        margin-right: #{$size}px !important;
+      }        
+    }
+  }
 }
 
 //Text style
@@ -86,42 +118,21 @@
   border-radius: 30px !important;
 }
 
-//Other
+//Backgrounds
 
-.linear-gradient {
-  background-image: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
-}
+@each $bg-img-name in $bg-imgs {
+  .#{$bg-img-name}-bg {
+    min-width: 1px;
+    min-height: 200px;
 
-.content-wrapper {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 20px;
-
-  @media (min-width: $xlg) {
-    padding: 0;
+    background-image: url(../images/#{$bg-img-name}.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
-.scale-hover {
-  transition: 0.15s;
-
-  &:hover {
-    color: $white;
-
-    transform: scale(1.05);
-  }  
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-
-  clip: rect(0 0 0 0);
-}
+//Click-area
 
 .click-area {
   transition-duration: 0.1s;
@@ -173,6 +184,43 @@
     bottom: -6px;
     left: -10px;
   }
+}
+
+//Other
+
+.linear-gradient {
+  background-image: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+
+  @media (min-width: $xlg) {
+    padding: 0;
+  }
+}
+
+.scale-hover {
+  transition: 0.15s;
+
+  &:hover {
+    color: $white;
+
+    transform: scale(1.05);
+  }  
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
 }
 
 .order-md-1 {

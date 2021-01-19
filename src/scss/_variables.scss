@@ -37,3 +37,9 @@ $breakpoints: (
   'lg': $lg,
   'xlg': $xlg
 );
+
+//Put names of background images in a list $bg-imgs
+
+$bg-imgs: (main-header, morten-harket-header, 
+subscription-free, subscription-standart, subscription-premium,
+eminem, ozzy);

@@ -22,13 +22,10 @@
   }
 }
 
-@mixin btn-color($color-name, $color) {
+@each $color-name, $color in $colors {
   .btn-#{$color-name} {
     border-color: $color;
 
     background-color: $color;
   }
-}
-@each $color-name, $color in $colors {
-  @include btn-color($color-name, $color);
 }
