@@ -16,28 +16,9 @@
   }
 }
 
-.subscription-card-title {
-  margin-bottom: 180px;
-
-  font-weight: normal;
-
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-
-  @media screen and (min-width: $md) {
-    font-size: 24px;   
-  }
-}
-
 .subscription-price-wrapper {
   display: flex;
   align-items: flex-start;
   margin-bottom: 40px;
-}
-
-.subscription-price {
-  font-size: 64px;
-  line-height: 1;
 }
 
