@@ -18,24 +18,29 @@
 }
 
 .pt-60 {
-  padding-top: 60px;
+  padding-top: 60px !important;
 }
 
 .pb-48 {
-  padding-bottom: 48px;
+  padding-bottom: 48px !important;
 }
 
 .mb-180 {
-  margin-bottom: 180px;
+  margin-bottom: 180px !important;
 }
 
-.my-0 {    
+.mx-0 {    
   margin-right: auto !important;
   margin-left: auto !important;
 }
 
+.my-0 {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
 .ml-auto {
-  margin-left: auto;
+  margin-left: auto !important;
 }
 
 //Responsive margins
@@ -59,7 +64,7 @@
 //Text style
 
 .lh-1 {
-  line-height: 1;
+  line-height: 1 !important;
 }
 
 .bold {
@@ -93,13 +98,13 @@
 //Position
 
 .relative {
-  position: relative;
+  position: relative !important;
 }
 
 //Box-model
 
 .inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .flex {
