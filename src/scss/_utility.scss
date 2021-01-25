@@ -43,7 +43,7 @@
   margin-left: auto !important;
 }
 
-//Responsive margins
+//Responsive paddings and margins
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @each $size in $sizes {
@@ -83,16 +83,10 @@
   text-align: center !important;
 }
 
-.color-white {
-  color: $white !important;
-}
-
-.color-grey {
-  color: $dark-grey !important;
-}
-
-.color-orange {
-  color: $orange !important;
+@each $color-name, $color in $colors {
+  .color-#{$color-name} {
+    color: $color;
+  }
 }
 
 //Position
@@ -205,15 +199,8 @@
   background-image: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
 }
 
-.content-wrapper {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 20px;
-
-  @media (min-width: $xlg) {
-    padding: 0;
-  }
+.pointer {
+  cursor: pointer;
 }
 
 .scale-hover {

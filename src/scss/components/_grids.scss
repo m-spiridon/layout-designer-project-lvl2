@@ -1,3 +1,14 @@
+.content-wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+
+  @media (min-width: $xlg) {
+    padding: 0;
+  }
+}
+
 .grid-lg-3 {
   @media screen and (min-width: $lg) {
     display: grid;
