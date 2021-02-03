@@ -1,6 +1,10 @@
-http://m-spiridon-p2.surge.sh
+MusicBox. Project of a music portal. 
 
-http://m-spiridon-p2.surge.sh/artist
+Contains main page: http://m-spiridon-p2.surge.sh 
+and artisrt's:      http://m-spiridon-p2.surge.sh/artist
 
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/m-spiridon/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/m-spiridon/layout-designer-project-lvl2/actions)
+Or simply take a quick look here:
+![p2-desktop](src/gifs/p2-desktop.gif)
+
+
+
